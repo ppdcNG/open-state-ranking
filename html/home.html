@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style='width: 100%'>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Home | Open State Government Ranking</title>
+    <link rel="shortcut icon" href="./favicon.ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/uikit.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id='map'></div>
+    <div class="uk-position-medium uk-position-cover uk-overlay uk-overlay-sec uk-flex uk-flex-center uk-flex-middle jumbo uk-text-center">
+        
+        <div class="uk-child-width-1-1" uk-grid>
+            <div class="jumbo">
+                OPEN STATE GOVERNMENT RANKING
+            </div>
+            <div>
+                    <div class="border-bottom2"></div>
+            </div>
+            <div class="entry uk-text-small">
+                <a href="">
+                    CLICK HERE TO VIEW RANKING
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidmVyc2hpbWF0aW5naXIiLCJhIjoiY2o4dW40NGQ2MHg0dTJxcnZnZXlrZTZubyJ9.18HccAMuAG6W9WGrhBghXw';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/vershimatingir/cjlt6tnkv0lh42rljr1x3ekiz',
+            center: [8.105306, 9.593960],
+            zoom: 5.5
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

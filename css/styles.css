@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    /* color: #eb7878; */
+}
+
+.page1 { 
+    /* The image used */
+    background-image: url("../images/l.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page2 { 
+    /* The image used */
+    background-color: #003459;
+
+    /* Full height */
+    height: 50%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.border-bottom {
+    width: 100%;
+    border-bottom: 2px solid #1c244a;
+  }
+  .border-bottom2 {
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .large-text {
+      font-size: 1.5rem;
+  }
+  .jumbo {
+    font-size: 4.4rem;
+    color: #ffffff;
+  }
+  .jum {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+
+  @media only screen and (max-device-width: 600px) {
+    .jumbo {
+        font-size: 2.5rem;
+    }
+}
+div.header1, span.header1 {
+    color: #0b409c;
+}
+div.state {
+    color: #0a0944;
+    cursor: pointer;
+}
+div.para{
+    color: #0a0944;
+}
+div.entry {
+    font-family: 'Montserrat', sans-serif;
+
+}
