@@ -49,6 +49,10 @@ body, html {
     width: 100%;
     border-bottom: 2px solid #1c244a;
   }
+  .border-bott {
+    width: 100%;
+    border-bottom: 1px solid #1c244a;
+  }
   .border-bottom2 {
     width: 100%;
     border-bottom: 2px solid #ffffff;
@@ -84,4 +88,6 @@ div.para{
 div.entry {
     font-family: 'Montserrat', sans-serif;
 
+}div.border {
+    border: 1px solid #1c244a;
 }
