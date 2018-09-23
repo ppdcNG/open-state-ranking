@@ -18,6 +18,10 @@
 
 <body>
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-right uk-hidden@m">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+        </div>
+
         <div class="uk-navbar-center">
 
             <div class="uk-navbar-center-left">
@@ -58,6 +62,115 @@
 
         </div>
     </nav>
+
+
+
+    <!--Modal to show color code. this modal will launch as soon as the page loads-->
+    <div id="my-id" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-margin-bottom page3" style="
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+">
+
+                <p class="uk-text-center jum uk-light">
+                    RANKING COLOR CODE
+                </p>
+
+            </div>
+            <div class="uk-modal-body">Refer to this color code to undertand the ranking. You can also view the full ranking methodology
+                <a href="3">Here</a>
+                <div class="border-bottom uk-margin"></div>
+
+                <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                    <div class="uk-width-1-1 uk-text-center">Signed up to OGP</div>
+
+                    <div class="uk-width-1-1 uk-child-width-1-2@s uk-margin" uk-grid>
+
+                        <div class="">
+                            <div>
+                                <progress class="uk-progress full" value="60" max="60" id=""></progress>
+                            </div>
+                            <div>
+                                State with Budget Information on her Website = 20 Points
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <div>
+                                <progress class="uk-progress red" value="60" max="60" id=""></progress>
+                            </div>
+                            <div>
+                                No Available Budget Information = 0 Points
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="uk-width-1-1 uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-width-1-1 uk-text-center">Access to Budget Information</div>
+                        <div class="uk-child-width-1-1">
+                                <div>
+                                    <progress class="uk-progress full" value="60" max="60" id=""></progress>
+                                </div>
+                                <div>
+                                    State with Budget Information on her Website = 20 Points
+                                </div>
+        
+                            </div>
+                            <div class="uk-child-width-1-1">
+                                <div>
+                                    <progress class="uk-progress red" value="60" max="60" id=""></progress>
+                                </div>
+                                <div>
+                                    No Available
+                                    Budget Information = 0 Points
+                                </div>
+        
+                            </div>
+
+                    </div>
+                    <div class="uk-width-1-1 uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-width-1-1 uk-text-center">Access to Contract Information</div>
+                        <div class="uk-child-width-1-1">
+                                <div>
+                                    <progress class="uk-progress full" value="60" max="60" id=""></progress>
+                                </div>
+                                <div>
+                                    Available Contractual Information = 20 Points
+                                </div>
+        
+                            </div>
+                            <div class="uk-child-width-1-1">
+                                <div>
+                                    <progress class="uk-progress red" value="60" max="60" id=""></progress>
+                                </div>
+                                <div>
+                                    No available Contractual Information = 0 Points
+                                </div>
+        
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="uk-modal-footer"></div>
+        </div>
+    </div>
+
+    <!--End of the modal-->
+
+
+
     <div class="uk-margin-bottom page2 uk-margin" style="
         display: -webkit-flexbox;
         display: -ms-flexbox;
@@ -119,7 +232,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Abia <span class="uk-hidden@s" >State</span>
+                        Abia
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -168,12 +282,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -194,7 +310,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Adamawa <span class="uk-hidden@s" >State</span>
+                        Adamawa
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -243,12 +360,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -269,7 +388,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Akwa-Ibom <span class="uk-hidden@s" >State</span>
+                        Akwa-Ibom
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -307,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="akwa">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -315,15 +435,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -344,7 +466,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Anambra <span class="uk-hidden@s" >State</span>
+                        Anambra
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -382,7 +505,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="anam">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -393,12 +516,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -419,7 +544,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Bauchi <span class="uk-hidden@s" >State</span>
+                        Bauchi
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -457,7 +583,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="bauchi">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -468,12 +594,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -493,7 +621,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Bayelsa <span class="uk-hidden@s" >State</span>
+                        Bayelsa
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -531,7 +660,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="baye">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -542,12 +671,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -568,7 +699,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Benue <span class="uk-hidden@s" >State</span>
+                        Benue
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -606,7 +738,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="ben">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -617,12 +749,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -642,7 +776,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Borno <span class="uk-hidden@s" >State</span>
+                        Borno
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -680,7 +815,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="borno">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -691,12 +826,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -716,7 +853,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Cross-River <span class="uk-hidden@s" >State</span>
+                        Cross-River
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -754,7 +892,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="cross">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -765,12 +903,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -790,7 +930,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Delta <span class="uk-hidden@s" >State</span>
+                        Delta
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -828,7 +969,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="delta">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -839,12 +980,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -864,7 +1007,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Ebonyi <span class="uk-hidden@s" >State</span>
+                        Ebonyi
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -902,7 +1046,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="ebon">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -913,12 +1057,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -938,7 +1084,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Enugu <span class="uk-hidden@s" >State</span>
+                        Enugu
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -976,7 +1123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="enugu">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -987,12 +1134,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1012,7 +1161,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Edo <span class="uk-hidden@s" >State</span>
+                        Edo
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1050,7 +1200,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="edo">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1061,12 +1211,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1086,7 +1238,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Ekiti <span class="uk-hidden@s" >State</span>
+                        Ekiti
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1124,7 +1277,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="ekiti">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1135,12 +1288,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1160,7 +1315,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Gombe <span class="uk-hidden@s" >State</span>
+                        Gombe
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1198,7 +1354,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="gombe">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1209,12 +1365,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1234,7 +1392,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Imo <span class="uk-hidden@s" >State</span>
+                        Imo
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1272,7 +1431,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="imo">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1280,15 +1439,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1308,7 +1469,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Jigawa <span class="uk-hidden@s" >State</span>
+                        Jigawa
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1346,7 +1508,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="jiga">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1357,12 +1519,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1382,7 +1546,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Kaduna <span class="uk-hidden@s" >State</span>
+                        Kaduna
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1420,7 +1585,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="kad">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1431,12 +1596,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1456,7 +1623,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Kano <span class="uk-hidden@s" >State</span>
+                        Kano
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1494,7 +1662,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="kan">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1505,12 +1673,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1530,7 +1700,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Katsina <span class="uk-hidden@s" >State</span>
+                        Katsina
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1568,7 +1739,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="kat">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1579,12 +1750,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1604,7 +1777,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Kebbi <span class="uk-hidden@s" >State</span>
+                        Kebbi
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1642,7 +1816,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="keb">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1653,12 +1827,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1678,7 +1854,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Kogi <span class="uk-hidden@s" >State</span>
+                        Kogi
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1716,7 +1893,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="kogi">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1727,12 +1904,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1752,7 +1931,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Kwara <span class="uk-hidden@s" >State</span>
+                        Kwara
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1790,7 +1970,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="kwara">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1798,15 +1978,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1826,7 +2008,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Lagos <span class="uk-hidden@s" >State</span>
+                        Lagos
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1864,7 +2047,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="lag">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1872,15 +2055,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1900,7 +2085,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Nasarawa <span class="uk-hidden@s" >State</span>
+                        Nasarawa
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -1938,7 +2124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="nasa">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -1946,15 +2132,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -1974,7 +2162,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Niger <span class="uk-hidden@s" >State</span>
+                        Niger
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2012,7 +2201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="nasa">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2023,12 +2212,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2048,7 +2239,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Ogun <span class="uk-hidden@s" >State</span>
+                        Ogun
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2086,7 +2278,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="ogun">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2094,15 +2286,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2122,7 +2316,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Ondo <span class="uk-hidden@s" >State</span>
+                        Ondo
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2160,7 +2355,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="ondo">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2168,15 +2363,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2196,7 +2393,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Osun <span class="uk-hidden@s" >State</span>
+                        Osun
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2234,7 +2432,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="osun">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2242,15 +2440,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2270,7 +2470,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Oyo <span class="uk-hidden@s" >State</span>
+                        Oyo
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2308,7 +2509,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="oyo">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2316,15 +2517,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2344,7 +2547,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Plateau <span class="uk-hidden@s" >State</span>
+                        Plateau
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2382,7 +2586,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="plat">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2390,15 +2594,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2418,7 +2624,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Rivers <span class="uk-hidden@s" >State</span>
+                        Rivers
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2456,7 +2663,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="river">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2464,15 +2671,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2493,7 +2702,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Sokoto <span class="uk-hidden@s" >State</span>
+                        Sokoto
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2531,7 +2741,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="soko">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2542,12 +2752,14 @@
                         <div class="uk-child-width-1-2" id="adam" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2567,7 +2779,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Taraba <span class="uk-hidden@s" >State</span>
+                        Taraba
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2605,7 +2818,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="tara">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2613,15 +2826,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2641,7 +2856,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Yobe <span class="uk-hidden@s" >State</span>
+                        Yobe
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2679,7 +2895,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="yob">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2687,15 +2903,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2715,7 +2933,8 @@
                 <div class="uk-grid-small" uk-grid>
                     <div class="uk-width-auto state  uk-text-center jum">1st</div>
                     <div class="uk-width-expand  uk-text-center state">
-                        Zamfara <span class="uk-hidden@s" >State</span>
+                        Zamfara
+                        <span class="uk-hidden@s">State</span>
                     </div>
 
                 </div>
@@ -2753,7 +2972,7 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
+            <div class="uk-width-expand@s" id="zam">
                 <div class=" boundary-align" uk-grid>
                     <div class="uk-width-1-3">
                         <progress class="uk-progress red" value="60" max="60" id="" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
@@ -2761,15 +2980,17 @@
 
                     </div>
                     <div class="uk-width-expand">
-                        <div class="uk-child-width-1-2" id="adam" uk-grid>
+                        <div class="uk-child-width-1-2" uk-grid>
                             <div>
                                 <progress class="uk-progress red" value="60" max="60" uk-tooltip="title: Not Signed Up to the OGP; pos: bottom"></progress>
-                         <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Budget Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Budget Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
                             </div>
                             <div>
                                 <progress class="uk-progress red" value="40" max="40" uk-tooltip="title: Unverified Website; pos: bottom"></progress>
-                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;"> Contract Information</div>
+                                <div class="uk-text-small uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">
+                                    Contract Information</div>
                                 <!-- <span class="uk-text-small uk-hidden@s uk-text-center header1" uk-scrollspy="cls:uk-animation-slide-top; hidden: false; delay: 2000;">Signed Up to the OGP</span> -->
 
                             </div>
@@ -2785,32 +3006,35 @@
     </div>
     <div class="uk-background-contain uk-background-cover uk-padding-large uk-light" id="footer" style="background-color: #028090;">
         <div class="uk-grid-medium uk-child-width-1-3@s" uk-grid>
-            <div>
-                The Open states ranking is an initiative of the Private and Public development centre with support from the Open Government
-                Partnership
-                <div class="uk-padding">
-                    <ul class="uk-thumbnav" uk-margin>
-                        <li class="uk-active">
-                            <a href="#">
-                                <img src="../images/ogp.jpg" width="100" alt="">
-                            </a>
-                        </li>
-                        <li class="uk-active">
-                            <a href="#">
-                                <img src="../images/ppdc.jpg" width="100" alt="">
-                            </a>
-                        </li>
+            <!-- <div class="uk-width-small">
 
-                    </ul>
+                <div class="uk-padding uk-child-width-1-1" uk-grid>
+
+                    <div>
+                        <a href="#" class="">
+                            <img src="../images/accessng.jpeg" width="100" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../images/ppdc.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
+            </div> -->
+            <div>The Open State Government Ranking is an initiative of the Public and Private Development Centre with support
+                from AccessNG
+
             </div>
             <div>
                 You can also view the FOI Compliance rankings here
             </div>
             <div>
-                Check out our Open Contracting Portal to get procurement information for Federal Minisitries, Departments and Agencies at www.Budeshi.ng.
+                Check out our Open Contracting Portal to get procurement information for Federal Minisitries, Departments and Agencies at
+                <a href="http://www.budeshi.ng"> www.budeshi.ng</a>.
             </div>
         </div>
+
         <div class="border-bottom uk-margin"></div>
         <div class="uk-width-1-1">
             <div class="uk-child-width-1-2@s" uk-grid>

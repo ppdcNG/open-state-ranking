@@ -5944,14 +5944,14 @@ ul.uk-nav-sub {
   border: 0;
 }
 .full.uk-progress::-webkit-progress-value {
-  background-color: #02c39a;
+  background-color: #4e9525;
   transition: width 0.6s ease;
 }
 .full.uk-progress::-moz-progress-bar {
-  background-color: #02c39a;
+  background-color: #4e9525;
 }
 .full.uk-progress::-ms-fill {
-  background-color: #02c39a;
+  background-color: #4e9525;
   transition: width 0.6s ease;
   /* 1 */
   border: 0;
