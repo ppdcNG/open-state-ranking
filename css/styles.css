@@ -78,6 +78,11 @@ body, html {
 div.header1, span.header1 {
     color: #0b409c;
 }
+div.header2, span.header2 {
+    color: #2470a0;
+    font-size: 1.2rem;
+}
+
 div.state {
     color: #0a0944;
     cursor: pointer;
